@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Astrovia — Gökyüzünü Keşfet</title>
+  <meta name="description" content="Astronomi, astroloji ve gökyüzü olayları.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./">ASTROVIA<span>✦</span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Menüyü aç">☰</button>
+  <nav id="nav">
+    <a href="#astronomi">Astronomi</a>
+    <a href="#astroloji">Astroloji</a>
+    <a href="#takvim">Gökyüzü Takvimi</a>
+    <a href="#eglence">Eğlence</a>
+    <a href="admin.html">Yönetim</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="stars"></div>
+  <p class="eyebrow">EVREN • GÖKYÜZÜ • ASTROLOJİ</p>
+  <h1>Gökyüzünü<br><span>Keşfet.</span></h1>
+  <p>Evren, gökyüzü olayları ve astroloji hakkında merak ettiğin her şey.</p>
+  <div class="hero-actions">
+    <a class="btn primary" href="#astronomi">Astronomiyi Keşfet</a>
+    <a class="btn ghost" href="#astroloji">Burcunu Öğren</a>
+  </div>
+</section>
+
+<section id="astroloji" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">ASTROLOJİ</p><h2>Bugünün Burçları</h2></div>
+    <span id="today"></span>
+  </div>
+  <div id="horoscopes" class="grid"></div>
+</section>
+
+<section id="astronomi" class="section">
+  <div class="section-head"><div><p class="eyebrow">ASTRONOMİ</p><h2>Evreni Keşfet</h2></div></div>
+  <div class="feature-grid">
+    <article><span>🌌</span><h3>Uzayın Derinlikleri</h3><p>Galaksiler, yıldızlar, kara delikler ve evrenin gizemleri.</p></article>
+    <article><span>☄️</span><h3>Gökyüzü Olayları</h3><p>Meteor yağmurları, tutulmalar ve dikkat çekici gök olayları.</p></article>
+    <article><span>🪐</span><h3>Güneş Sistemi</h3><p>Gezegenleri ve onların ilginç özelliklerini keşfet.</p></article>
+  </div>
+</section>
+
+<section id="takvim" class="section dark-card">
+  <p class="eyebrow">GÖKYÜZÜ TAKVİMİ</p>
+  <h2>Bu gece gökyüzünde ne var?</h2>
+  <p>Yaklaşan gökyüzü olaylarını burada yayınlayacağız.</p>
+</section>
+
+<section id="eglence" class="section">
+  <p class="eyebrow">EĞLENCE</p>
+  <h2>Kozmik Meraklar</h2>
+  <div id="articles" class="articles"></div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Astrovia · Gökyüzünü keşfet.</footer>
+<script src="app.js"></script>
+</body>
+</html>

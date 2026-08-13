@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Astrovia Yönetim</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">ASTROVIA<span>✦</span></a><a class="back" href="index.html">Siteye dön</a></header>
+<main class="admin">
+  <p class="eyebrow">YÖNETİM PANELİ</p>
+  <h1>Astrovia İçerik Yönetimi</h1>
+  <div id="configNotice" class="notice">Supabase bağlantısı henüz yapılandırılmadı. Bu ilk sürümde içerik tarayıcıda saklanır; Supabase bağlantısını eklediğimizde gerçek yayın sistemi kullanılacak.</div>
+  <form id="postForm" class="panel">
+    <label>Tarih<input id="date" type="date" required></label>
+    <label>Burç<select id="sign"><option>Koç</option><option>Boğa</option><option>İkizler</option><option>Yengeç</option><option>Aslan</option><option>Başak</option><option>Terazi</option><option>Akrep</option><option>Yay</option><option>Oğlak</option><option>Kova</option><option>Balık</option></select></label>
+    <label>Genel yorum<textarea id="general" required></textarea></label>
+    <label>Aşk<textarea id="love"></textarea></label>
+    <label>Kariyer<textarea id="career"></textarea></label>
+    <label>Para<textarea id="money"></textarea></label>
+    <label>Günün tavsiyesi<textarea id="tip"></textarea></label>
+    <button class="btn primary" type="submit">Yayınla</button>
+  </form>
+  <h2>Yayınlanan yorumlar</h2>
+  <div id="saved" class="saved"></div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
