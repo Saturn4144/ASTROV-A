@@ -1,9 +1,72 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Astrovia ✦ Gökyüzünü Keşfet</title><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="brand" href="./">ASTROVIA <b>✦</b></a><button id="menu">☰</button><nav id="nav"><a href="#yazilar">Yazılar</a><a href="#gezegenler">Gezegenler</a><a href="#gokyuzu">Gökyüzü</a><a href="#astroloji">Astroloji</a><a href="#fal">Fal & Tarot</a></nav></header>
-<main><section class="hero"><small>EVREN • GÖKYÜZÜ • ASTROLOJİ • MİSTİK</small><h1>Gökyüzünü<br><em>Keşfet.</em></h1><p>Gezegenlerden galaksilere, Ay'dan burçlara, tarot ve kahve falına kadar Astrovia'da keşfet.</p><a class="btn" href="#yazilar">Keşfetmeye başla</a></section>
-<section id="yazilar"><small>BLOG</small><h2>Öne Çıkan Yazılar</h2><div id="articles" class="grid"></div></section>
-<section id="gezegenler"><small>GÜNEŞ SİSTEMİ</small><h2>Gezegenleri Keşfet</h2><div id="planets" class="grid planets"></div></section>
-<section id="gokyuzu"><small>ASTRONOMİ & GÖKYÜZÜ</small><h2>Evrenin Derinlikleri</h2><div class="grid"><article>🌌<h3>Galaksiler</h3><p>Samanyolu ve milyarlarca yıldızın oluşturduğu dev kozmik sistemleri keşfet.</p></article><article>🕳️<h3>Kara Delikler</h3><p>Yerçekiminin olağanüstü güçlü olduğu kozmik cisimlere giriş.</p></article><article>☄️<h3>Gökyüzü Olayları</h3><p>Meteor yağmurları, tutulmalar, kuyruklu yıldızlar ve dikkat çekici gökyüzü olayları.</p></article><article>🌙<h3>Ay Rehberi</h3><p>Yeniay, dolunay ve Ay'ın evrelerinin nasıl oluştuğunu öğren.</p></article></div></section>
-<section id="astroloji"><small>ASTROLOJİ</small><h2>12 Burç</h2><div id="zodiac" class="grid zodiac"></div></section>
-<section id="fal"><small>MİSTİK DÜNYA</small><h2>Fal & Tarot</h2><div class="grid"><article>☕<h3>Kahve Falı</h3><p>Kalp, yol, kuş, yıldız, anahtar gibi sembollerin geleneksel ve eğlence amaçlı yorumlarını keşfet.</p></article><article>🔮<h3>Tarot</h3><p>Tarot kartlarının temel anlamları ve üç kartlık geçmiş–şimdi–gelecek açılımı.</p></article><article>✨<h3>Günün Enerjisi</h3><p>Günlük astroloji ve kişisel farkındalık içerikleri.</p></article></div></section>
-</main><footer>ASTROVIA ✦ <span>Gökyüzünü keşfet.</span></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Astrovia ✦ Gökyüzünü Keşfet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">ASTROVIA <b>✦</b></a>
+  <button id="menu">☰</button>
+  <nav id="nav">
+    <a href="#yazilar">Yazılar</a><a href="#gezegenler">Gezegenler</a><a href="#gokyuzu">Gökyüzü</a><a href="#astroloji">Astroloji</a><a href="#fal">Fal & Tarot</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <small>EVREN • GÖKYÜZÜ • ASTROLOJİ • MİSTİK</small>
+  <h1>Gökyüzünü<br><em>Keşfet.</em></h1>
+  <p>Gezegenlerden galaksilere, Ay'dan burçlara, tarot ve kahve falına kadar Astrovia'da keşfet.</p>
+  <a class="btn" href="#yazilar">Keşfetmeye başla</a>
+</section>
+
+<section id="yazilar">
+  <small>BLOG</small><h2>Öne Çıkan Yazılar</h2>
+  <div id="articles" class="grid"></div>
+</section>
+
+<section id="gezegenler">
+  <small>GÜNEŞ SİSTEMİ</small><h2>Gezegenleri Keşfet</h2>
+  <div id="planets" class="grid planets"></div>
+</section>
+
+<section id="gokyuzu">
+  <small>ASTRONOMİ & GÖKYÜZÜ</small><h2>Evrenin Derinlikleri</h2>
+  <div class="grid">
+    <article class="clickable" onclick="openDetail('Galaksiler','Galaksiler; yıldızlar, gaz, toz ve karanlık maddeden oluşan dev sistemlerdir. Samanyolu da bunlardan biridir. Galaksiler sarmal, eliptik ve düzensiz gibi farklı biçimlerde olabilir. Gözlediğimiz evrende çok büyük sayıda galaksi bulunur.')">🌌<h3>Galaksiler</h3><p>Samanyolu ve dev kozmik sistemleri keşfet.</p><span>Yazıyı oku →</span></article>
+    <article class="clickable" onclick="openDetail('Kara Delikler','Kara delikler, kaçış hızının ışık hızını aşacağı kadar yoğun kütleçekime sahip bölgelerdir. Olay ufku, geri dönüşün mümkün olmadığı sınır olarak tanımlanır. Kara delikler doğrudan görülmez; çevrelerindeki madde ve ışık üzerindeki etkilerinden anlaşılır.')">🕳️<h3>Kara Delikler</h3><p>Olay ufku ve güçlü kütleçekimi öğren.</p><span>Yazıyı oku →</span></article>
+    <article class="clickable" onclick="openDetail('Meteor Yağmurları','Meteor yağmurları, Dünya’nın bir kuyruklu yıldız ya da asteroidin yörüngesinde bıraktığı küçük parçacık akışlarından geçmesiyle oluşur. Bu parçacıklar atmosfere yüksek hızla girerken ısınır ve kısa süreli parlak izler oluşturur.')">☄️<h3>Meteor Yağmurları</h3><p>Gökyüzündeki ışık izlerinin sırrı.</p><span>Yazıyı oku →</span></article>
+    <article class="clickable" onclick="openDetail('Ay’ın Evreleri','Ay kendi ışığını üretmez; Güneş ışığını yansıtır. Dünya çevresindeki hareketi sırasında aydınlık yarısının bize görünen kısmı değişir. Bu nedenle yeniay, ilkdördün, dolunay ve sondördün gibi evreleri görürüz.')">🌙<h3>Ay’ın Evreleri</h3><p>Yeniaydan dolunaya Ay'ın değişimi.</p><span>Yazıyı oku →</span></article>
+  </div>
+</section>
+
+<section id="astroloji">
+  <small>ASTROLOJİ</small><h2>12 Burç</h2>
+  <div id="zodiac" class="grid zodiac"></div>
+</section>
+
+<section id="fal">
+  <small>MİSTİK DÜNYA</small><h2>Fal & Tarot</h2>
+  <div class="grid">
+    <article class="clickable" onclick="openDetail('Kahve Falı','Kahve falı, fincanda kalan telve şekillerinin geleneksel ve eğlence amaçlı yorumlanmasına dayanır. Kalp aşkı, yol seyahati ya da hareketi, kuş haberleri, anahtar yeni bir kapıyı simgeleyebilir. Bu semboller kesin gelecek öngörüsü değildir.')">☕<h3>Kahve Falı</h3><p>Fincandaki sembollerin geleneksel anlamları.</p><span>Keşfet →</span></article>
+    <article class="clickable" onclick="openDetail('Tarot','Tarot desteleri çoğunlukla 78 karttan oluşur. Büyük Arkana güçlü arketipik temaları; Küçük Arkana ise günlük yaşam, ilişkiler ve kararlarla ilişkilendirilen sembolleri içerir. Tarot, eğlence ve kişisel düşünme aracı olarak ele alınmalıdır.')">🔮<h3>Tarot</h3><p>Kartların sembolik dünyasına giriş.</p><span>Kartları keşfet →</span></article>
+    <article class="clickable" onclick="openDetail('Günün Enerjisi','Günün Enerjisi bölümü, astrolojik sembollerden ilham alan kısa ve eğlenceli günlük notlar için tasarlanmıştır. Buradaki yorumlar kişisel farkındalık ve eğlence amaçlıdır; bilimsel tahmin değildir.')">✨<h3>Günün Enerjisi</h3><p>Kısa günlük astroloji notları.</p><span>Bugünü keşfet →</span></article>
+  </div>
+</section>
+</main>
+
+<footer>ASTROVIA ✦ <span>Gökyüzünü keşfet.</span></footer>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <button id="close">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body></html>
